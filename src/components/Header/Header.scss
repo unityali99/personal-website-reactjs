@@ -1,0 +1,14 @@
+.head
+{
+    padding: 2rem 0rem;
+    &__invisibleImg
+    {
+        max-width: 100%;
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+    &__visibleImg
+    {
+        opacity: 100%;
+    }
+}

@@ -1,0 +1,51 @@
+.foot
+{
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    padding: 3rem 6rem;
+    background-color: #C4A484;
+    border: 3px inset brown;
+    &__item
+    {
+        text-decoration: none;
+        color: black;
+        font:
+        {
+            family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            size: 25pt;
+        }
+        padding: .5rem 2rem;
+        &:hover
+        {
+            color: white;
+            background-color: brown;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+    &__theme
+    {
+        margin-top: .8rem;
+        &--dark,&--light
+        {
+            margin: 0 5px;
+            cursor: pointer;
+            padding: .5rem 1.5rem;
+            border: 1px solid rgba(blue, .55);
+            opacity: 90%;
+        }
+        &--dark:hover,&--light:hover
+        {
+            opacity: 100%;
+            border: 1px solid rgba(red, .55);
+        }
+        &--dark
+        {
+            color: whitesmoke;
+            background-color: black;
+        }
+    }
+}

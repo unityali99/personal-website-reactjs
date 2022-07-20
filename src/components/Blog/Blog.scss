@@ -1,0 +1,60 @@
+.blog
+{
+    padding: 2rem 0;
+    &__post
+    {
+        list-style: none;
+        &--item
+        {
+            animation-name: leftToRight;
+            animation-duration: .6s;
+        }
+    }
+
+    &__btnContainer
+    {
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center ;
+
+        &__li
+        {
+            margin: 0 2px;
+            &--normal
+            {
+                font-size: 10pt;
+                background-color: cornflowerblue;
+                width: 2rem;
+                border: 1px solid black;
+                color: whitesmoke;
+                &:hover
+                {
+                    background-color: blueviolet;
+                    cursor: pointer;
+                }
+            }
+            &--active
+            {
+                font-size: 10pt;
+                background-color: brown;
+                width: 2rem;
+                border: 1px solid blue;
+                color: whitesmoke;
+            }
+        }   
+    }
+}
+
+@keyframes leftToRight 
+{
+    from
+    {
+        margin-left: -100%;
+    }
+
+    to
+    {
+        margin: 0;
+    }
+}
